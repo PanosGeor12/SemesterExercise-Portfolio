@@ -1,9 +1,9 @@
-import './Posts.css';
+import './Blog.css';
 import { useState, useEffect } from 'react'
+import Title from '../Title';
 import axios from 'axios';
-import { PacmanLoader } from 'react-spinners';
 
-export default function Posts() {
+export default function Blog() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -36,19 +36,21 @@ export default function Posts() {
         fetchPosts();
     }, []);
 
-    if (loading) {
-        return <div id='loadingOverlay'>
-                    <PacmanLoader loading={loading}/>
-                </div>;
-    }
+    // if (loading) {
+    //     return <div id='loadingOverlay'>
+    //                 <p>Loading...</p>
+    //             </div>;
+    // }
     return (
         <>
-
-        {(posts.length > 0) 
-            ?  posts.map((post) => (
-                    <div key={post.id}>{post.title}</div>
-                )) 
-            : <p>No posts</p>}
+            <Title title="Blog"/>
+            <div className='content'>
+            {(posts.length > 0) 
+                ?  posts.map((post) => (
+                        <div key={post.id}>{post.title}</div>
+                    )) 
+                : <p>No posts</p>}
+            </div>
         </>
     )
 }

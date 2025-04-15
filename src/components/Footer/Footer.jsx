@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <div className='copyright'>Made by <a href="https://github.com/PanosGeor12">PanosG</a> - &copy; {currentYear.getFullYear()}</div>
+                <div className='copyright'>Made with ❤️ by <a href="https://github.com/PanosGeor12">PanosG</a> - &copy; {currentYear.getFullYear()}</div>
             </footer>
         </>
     );

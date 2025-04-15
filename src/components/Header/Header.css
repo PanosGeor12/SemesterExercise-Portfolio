@@ -1,5 +1,4 @@
 header {
-    background-color: var(--licorice);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -7,10 +6,12 @@ header {
 
 header h1 {
     font-family: 'Jersey-15';
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 
 header nav {
+    padding: 20px 30px;
+    border-radius: 20px;
     align-self: center;
 }
 
@@ -19,6 +20,15 @@ header nav ul {
     gap: 20px;
 }
 
+a#headerTitle {
+    display: flex;
+    width: 50px;
+    gap: 20px;
+}
+
+a#headerTitle img {
+    width: 100%;
+}
 li.nav-link a{
     font-family: 'Jersey-15';
     font-size: 1.5em;

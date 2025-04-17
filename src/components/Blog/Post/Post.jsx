@@ -8,11 +8,13 @@ import Title from '../../Title';
 
 export default function Post() {
 
-    const match = useMatch('/blog/:slug');
+    const match = useMatch('/blog/post/:slug');
     const postSlug = match.params["slug"];
+
     const [post, setPost] = useState([]);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
+    
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -47,9 +49,10 @@ export default function Post() {
 
     useEffect(() => {
         if (error) {
-            navigate("/blog");       
+            navigate("/not-found");       
         }
     },[error])
+
     return (
         <>
             <Title title={post.title} />

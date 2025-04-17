@@ -15,3 +15,14 @@ div#loadingOverlay {
 div#loadingOverlay>span {
     margin: auto;
 }
+
+div.no-post {
+    font-size: 1.2em;
+    position: absolute;
+}
+
+div.no-post a {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}

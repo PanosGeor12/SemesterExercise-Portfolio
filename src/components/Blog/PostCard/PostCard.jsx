@@ -5,11 +5,11 @@ export default function PostCard({ title, category, slug, content, date, author}
         <article className="flex max-w-xl flex-col items-start justify-between">
             <div className="flex items-center gap-x-4 text-xs">
                 <time dateTime={date} className="">{date}</time>
-                <a href="" className="relative z-10 rounded-full bg-gray-50 text-black px-3 py-1.5 font-medium hover:bg-gray-100">{category}</a>
+                <a href="#" className="relative z-10 rounded-full bg-gray-50 text-black px-3 py-1.5 font-medium hover:bg-gray-100">{category}</a>
             </div>
             <div className="group relative">
                 <h3 className="mt-3 text-lg/6 font-semibold group-hover">
-                    <a href={`blog/${slug}`}>
+                    <a href={`blog/post/${slug}`}>
                         <span className="absolute inset-0"></span>
                         {title}
                     </a>

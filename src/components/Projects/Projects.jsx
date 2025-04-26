@@ -54,7 +54,7 @@ export default function Projects() {
                 }
             } catch (err) {
                 setError(true)
-                console.log(err)
+                // console.log(err)
             }
         }
         fetchProjects();

@@ -1,0 +1,8 @@
+div.copyright {
+    text-align: center;
+}
+
+div.copyright a {
+    color: var(--jasper);
+    text-decoration: underline;
+}

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope/Manrope-VariableFont.ttf');
+}
+
+@font-face {
+  font-family: 'Jersey-15';
+  src: url('/fonts/Jersey_15/Jersey15-Regular.ttf') format('truetype');
+}
+
+
+* {
+  font-family: 'Manrope';
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --night: #070D0C;
+  --jasper: #cd4631ff;
+  --lavender-web: #e9ebf8ff;
+  --charcoal: #37515fff;
+  --licorice: rgb(32, 18, 24);
+  
+  font-family: 'Manrope';
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--lavender-web);
+  background-color: var(--night);
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div.content {
+  width: 80%;
+  margin: auto;
+  flex: 1;  
+  padding: 10px 20px;
+}
+
+@media (max-width:800px) {
+  div.content {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+footer {
+  padding: 20px;
+}
+
+

@@ -1,0 +1,69 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Jersey-15";
+  font-size: 2.5em;
+}
+
+header nav {
+  padding: 20px 30px;
+  align-self: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header button.menu-btn {
+  display: none;
+}
+
+.active {
+  display: block;
+  background-color: var(--licorice);
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+a#headerTitle {
+  display: flex;
+  width: 50px;
+  gap: 20px;
+}
+
+a#headerTitle img {
+  width: 100%;
+}
+li.nav-link a {
+  font-family: "Jersey-15";
+  font-size: 1.5em;
+  padding: 0px 10px;
+}
+
+li.nav-link:hover {
+  background-color: var(--lavender-web);
+  color: var(--licorice);
+  box-shadow: 0 0 0 4px #333, /* outer border */ 4px 0 0 0 #333, -4px 0 0 0 #333,
+    0 4px 0 0 #333, 0 -4px 0 0 #333;
+}
+
+@media (max-width: 800px) {
+  header nav ul {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header button.menu-btn {
+    display: block;
+  }
+}

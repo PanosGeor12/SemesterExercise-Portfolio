@@ -1,0 +1,28 @@
+div#loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    align-content: center;
+}
+
+div#loadingOverlay {
+    background-color: rgba(171, 171, 171, 0.7);
+}
+
+div#loadingOverlay>span {
+    margin: auto;
+}
+
+div.no-post {
+    font-size: 1.2em;
+    position: absolute;
+}
+
+div.no-post a {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}

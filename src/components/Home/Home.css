@@ -1,0 +1,15 @@
+section h2 {
+    font-size: 2em;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+section div.about-me-content {
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+}

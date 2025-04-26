@@ -1,0 +1,12 @@
+div.post h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+div.post p {
+    font-size: 1.1em;
+} 
+
+div.post img {
+    padding: 20px 0;
+}

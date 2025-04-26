@@ -16,7 +16,7 @@ export default function Blog() {
         const fetchPosts = async () => {
             try {
                 const response = await axios({
-                    url: "https://wordpress.test/graphql",
+                    url: import.meta.env.VITE_GRAPHQL_ENDPOINT,
                     method: "post",
                     data: {
                         query: `query Posts {
